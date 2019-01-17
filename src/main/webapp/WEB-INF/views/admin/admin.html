@@ -14,7 +14,10 @@
     <!-- /* Handle the flash message */-->
 
     <p class="lead text-center">
-        Welcome administrator: <span th:text="${#authentication.name}">Yoda</span>.
+    	<span th:text="${greet}">Greeting</span>
+    </p>
+    <p>
+        I know you, <span th:text="${#authentication.name}">Yoda</span>.
     </p>
     <div th:replace="fragments/layout :: footer"></div>
 </div>
